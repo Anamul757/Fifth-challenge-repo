@@ -1,15 +1,3 @@
-// function getInputValueById(id){
-//     const inputValue = document.getElementById(id).value;
-//     const inputNumber = parseFloat(inputValue);
-//     return inputNumber;
-// }
-
-// function getTextValueById(id){
-//     const textValue = document.getElementById(id).innerText;
-//     const textNumber = parseFloat(textValue);
-//     return textNumber;
-// }
-
 
 // 1st-function
 document.getElementById('donate-1st-btn')
@@ -29,25 +17,14 @@ else{
     const newMainBalance = mainBalance - inputMoney1;
     document.getElementById('total-amount').innerText = newMainBalance;
 
-    // // add history section
-    // const time = new Date();
-    // document.getElementById('date').innerText = Date: ${now};
-    // const div = document.createElement('div');
-    // div.innerHTML = `
-    // <div class="card border-2 border-gray-400 rounded-lg>
-    // <h2 class="card-title>
-    // ${inputMoney1} Taka is Donate for Flood at Noakhali, Bangladesh </h2>
-    // <p>Date: ${now}</p>
-    // </div>
-    // `
-    // const historyContainer = document.getElementById('history-container');
-    // historyContainer.appendChild(div);
+
+    const date = new Date();
 
     const div = document.createElement('div');
-            div.classList.add('bg-yellow-300');
+            div.classList.add('border-2', 'border-gray-400', 'rounded-lg');
             div.innerHTML = `
-                <h4 class="text-2xl font-bold">Cash Out</h4>
-                <p>${inputMoney1} withdraw.</p>
+                <p>${inputMoney1} Taka is Donated for famine-2024 at Feni, Bangladesh.</p>
+                <p>Date: ${date} </p>
             `
 
             document.getElementById('history-container').appendChild(div);
@@ -95,3 +72,24 @@ document.getElementById('donate-2nd-btn')
     }
     }
     )
+
+
+// Button function
+var count = 0; 
+function buttonCall(x){
+    var x;
+    if(x == 1){
+        count ++ ;
+    } 
+    if( count == 1){
+        document.getElementById('donation-btn').style.background= "rgb(180, 244, 97)";
+        document.getElementById('history-btn').style.background= "none";
+
+    }
+    
+    else if(count == 2){
+        document.getElementById('donation-btn').style.background="none";
+        document.getElementById('history-btn').style.background="rgb(180, 244, 97)";
+        count = 0;
+    }
+}
