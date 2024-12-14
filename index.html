@@ -29,11 +29,12 @@
     <main>
       <!-- Button section -->
       <div class="flex justify-center gap-5 pt-16">
-        <button class="btn btn-primary bg-[#B4F461] font-semibold text-xl text-black px-3 py-2">Donation</button>
-        <button class="btn btn-outline">History</button>
+        <button id="donation-btn" class="btn btn-primary bg-[#B4F461] font-semibold text-xl text-black px-3 py-2">Donation</button>
+        <button id="history-btn" class="btn btn-outline">History</button>
       </div>
       <!-- Donation section -->
-       <!-- section-1 -->
+      <div id="donation-section">
+         <!-- section-1 -->
       <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row border-2 border-gray-400 rounded-lg mx-14">
           <img
@@ -93,9 +94,17 @@
           </div>
         </div>
       </div>
+      </div>
+      <!-- History secton -->
+       <div id="history-section" class="hidden">
+<div id="history-container">
+  
+</div>
+       </div>
     </main>
     <footer></footer>
     <script src="js/function.js"></script>
+    <script src="js/button.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
