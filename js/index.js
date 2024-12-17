@@ -85,6 +85,7 @@ document.getElementById('donate-2nd-btn')
         alert('Failed to donate money');
         return;
     }
+}
     else{
         const cardBalance = getTextValueById('a-d-tk');
         const newCardBalance = cardBalance + inputMoney3;
@@ -104,7 +105,7 @@ document.getElementById('donate-2nd-btn')
                 document.getElementById('history-container').appendChild(div);
     }
     }
-    )
+)
 
 
 // Button function

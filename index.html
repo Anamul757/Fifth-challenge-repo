@@ -14,7 +14,7 @@
     <header>
         <div class="navbar bg-base-100 px-24 py-5">
             <div class="navbar-start">
-              <button class="btn btn-primary bg-[#B4F461] font-semibold text-xl text-black px-3 py-2">Blog</button>
+              <button id="blog-btn" class="btn btn-primary bg-[#B4F461] font-semibold text-xl text-black px-3 py-2">Blog</button>
             </div>
             <div class="navbar-center gap-2">
               <img src="assets/logo.png" alt="">
@@ -151,7 +151,11 @@
 </div>
        </div>
     </main>
-    <footer></footer>
+    <script>
+      document.getElementById("blog-btn").onclick = function() {
+    window.location.href = "blog.html" ;
+}
+    </script>
     <script src="js/function.js"></script>
     <script src="js/button.js"></script>
     <script src="js/index.js"></script>

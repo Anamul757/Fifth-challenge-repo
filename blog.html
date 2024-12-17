@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 px-24 py-5">
+            <div class="navbar-start">
+              <button id="home-btn" class="btn btn-primary bg-[#B4F461] font-semibold text-xl text-black px-3 py-2">Home</button>            </div>
+            <div class="navbar-center gap-2">
+              <img src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end gap-2">
+              <img src="assets/coin.png" alt="">
+              <p><span id="total-amount">5500</span>BDT</p>
+            </div>
+          </div>
+    </header>
+    <main class="px-5">
+        <div class="flex text-center items-center">
+        <h1 class="text-xl font-medium">IMPORTANT FAQ</h1>
+        <img class="w-14 h-14" src="assets/faq.gif" alt="">
+    </div>
+    <!-- 1st FAQ -->
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
+        <div class="collapse-content">
+          <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, allowing developers to interact with and manipulate HTML and CSS using JavaScript.
+          </p>
+        </div>
+      </div>
+    <!-- 2nd FAQ -->
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How can you select an HTML element in the DOM?</div>
+        <div class="collapse-content">
+          <p>You can select HTML elements using various DOM methods like:
+
+            getElementById()
+            getElementsByClassName()
+            getElementsByTagName()
+            querySelector() (selects the first match)
+            querySelectorAll() (selects all matches)</p>
+        </div>
+      </div>
+    <!-- 3rd FAQ -->
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is the difference between innerHTML and textContent?</div>
+        <div class="collapse-content">
+          <p>innerHTML: Gets or sets the HTML content inside an element. It parses HTML tags.
+            textContent: Gets or sets only the plain text inside an element, ignoring HTML tags.</p>
+        </div>
+      </div>
+    <!-- 4th FAQ -->
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How do you add an event listener to a DOM element?</div>
+        <div class="collapse-content">
+          <p>You can use the addEventListener() method to attach an event listener to a DOM element. This method allows you to define the type of event and a callback function to execute when the event occurs.</p>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.getElementById("home-btn").onclick = function() {
+    window.location.href = "index.html" ;
+}
+    </script>
+    <script src="js/function.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
